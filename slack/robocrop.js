@@ -66,7 +66,10 @@ app.post('/slackintegrate', function(req,res) {
   console.log(req.body)
   if (req.body.team_domain = "hacktech2018") {
     if (isStringin(req.body.text, howarray)) {
-      if((data["temperature"] > 75) && (data["moisture"] == 1 )) {
+      if(data["luminosity"] < 50) {
+        res.send("It is getting dark in here. I'm scared and alone.")
+      }
+      else if((data["temperature"] > 75) && (data["moisture"] == 1 )) {
         res.send("These conditions are terrible. It is to hot and I am totally dry too")
       }
       else if((data["temperature"] < 75) && (data["moisture"] == 1)) {
@@ -77,9 +80,6 @@ app.post('/slackintegrate', function(req,res) {
       }
       else {
   res.send("Imma sunbathing peeps")
-      }
-      if(data["luminosity"] < 50) {
-        res.send("It is getting dark in here. I'm scared and alone.")
       }
     }
     else if(isStringin(req.body.text, greetarray)){
