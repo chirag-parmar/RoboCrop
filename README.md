@@ -15,4 +15,5 @@
 ### What is the future of RoboCrop?
  As a technology, RoboCrop generates 1200 data points per hour which equates to more than 10 million datapoints a year from one plant. The data collected is huge and can be used for further improvements in the trillion dollar agricultural industry. Data is indeed the new currency.
 
+#### Youtube --> https://youtu.be/eDSuOqQpz1A 
 ![Alt text](https://image-store.slidesharecdn.com/d1079a31-ba38-4938-9127-a3103265b4d3-original.jpeg)
